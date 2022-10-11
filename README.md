@@ -1,6 +1,6 @@
 #  Dog image search
 
-This project is based on Node.js and koa web framework.
+This is a front-end project based on Node.js and koa web framework.
 
 ## Functionality
 
