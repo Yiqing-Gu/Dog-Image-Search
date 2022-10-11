@@ -1,27 +1,21 @@
-# dogs
+#  Dog image search
 
-This is the starter code for a [Node.js](https://nodejs.org/en/about/) server
-using the [Koa web framework](https://koajs.com/). There a web page in
-`/public` which should be served to the user.
+This project is based on Node.js and koa web framework.
 
-## Getting started
+## Functionality
 
-You will need to install Node.js.
+1. Users can get an image for a specific dog breed thourgh reading input and calling dog API.
 
-For best results, use [Node.js 16 or higher](https://nodejs.org/).
+2. Users can get a random dog picture through calling dog API.
 
-You can check your current version of Node.js with
+3. There is a test file for random dog pictures.
 
-```sh
-$ node --version
-v16.17.0
-```
+## Launch
 
-Then, inside this project, run
+Inside this project, run
 
 ```sh
-npm install
-node server.js
+node main.js
 ```
 
 If the server starts successfully, you will see
@@ -30,22 +24,9 @@ If the server starts successfully, you will see
 Server running on http://localhost:3011
 ```
 
-in the terminal.
+in the terminal. At the same time, a web page will appear.
 
-## Documentation
-
-- Koa: https://koajs.com/
-- @koa/router: https://github.com/koajs/router#koarouter
-- koa-body: https://github.com/dlau/koa-body#usage-with-koa-router
-- Dogs API: https://dog.ceo/dog-api/breeds-list
-
-## Yiqing's implementation
-
-1. Get an image for a specific breed thourgh users' input and dog API.
-
-2. Get a random dog picture through dog API.
-
-3. Created a test for 2.
+Users can search through a specific dog breed or getting a random image.
 
 ## About testing
 
@@ -55,7 +36,7 @@ A middleware called "Jest" is used and needed here. Test file is in dogs-main\__
 npm install -D jest supertest
 ```
 
-Package.json has been revised. If not, please revise in the following way.
+Package.json should have been revised. If not, please revise in the following way.
 
 //package.json
 "scripts": {
@@ -69,4 +50,3 @@ Run the following command to start testing.
 ```sh
 npm run test
 ```
-
