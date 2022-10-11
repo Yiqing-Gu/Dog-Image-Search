@@ -28,7 +28,7 @@ in the terminal. At the same time, a web page will appear.
 
 Users can search through a specific dog breed or getting a random image.
 
-## About testing
+## Test
 
 A middleware called "Jest" is used and needed here. Test file is in dogs-main\__tests__ and called "routes.test.js".
 
