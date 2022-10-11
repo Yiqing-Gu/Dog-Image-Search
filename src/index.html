@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+	<title>Lots of dogs! 🐕</title>
+</head>
+<body>
+	<h1>I have my choice! 🐕</h1>
+	<p>See photos of your favorite dogs</p>
+	
+	<form action="http://localhost:3011/single" method="get">
+		<input type="text" name="breed" placeholder="Enter a dog breed">
+		<button type="submit">Fetch</button>
+      </form>
+
+	<h1>I want a surprise! 🎉</h1>
+	<p>See a random dog</p>
+	
+	<form action="http://localhost:3011/multiple" method="get">
+		<button type="submit">Fetch</button>
+      </form>
+</body>
+</html>
