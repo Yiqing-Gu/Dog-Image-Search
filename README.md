@@ -65,14 +65,6 @@ This project uses [Jest](https://jestjs.io/) and [SuperTest](https://github.com/
    ```
 4. The console will display the test results, including status codes and URLs for random images.
 
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request for review.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Acknowledgements
 
 - [Dog API](https://dog.ceo/dog-api/) for providing the dog images.
