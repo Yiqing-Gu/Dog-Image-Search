@@ -1,52 +1,79 @@
-#  Dog image search
 
-This is a front-end project based on Node.js and koa web framework.
+# Dog Image Search
 
-## Functionality
+This is a front-end project built with Node.js and the Koa web framework, allowing users to search for dog images by breed or retrieve random dog images.
 
-1. Users can get an image for a specific dog breed thourgh reading input and calling dog API.
+## Features
 
-2. Users can get a random dog picture through calling dog API.
+1. **Search by Breed**: Users can input a specific dog breed to retrieve an image corresponding to that breed.
+2. **Random Dog Image**: Users can obtain a random dog picture.
+3. **Testing**: Includes test files for random dog picture retrieval.
 
-3. There is a test file for random dog pictures.
+## Getting Started
 
-## Launch
+### Prerequisites
 
-Inside this project, run
+- Node.js installed on your machine.
 
-```sh
-node main.js
-```
+### Installation
 
-If the server starts successfully, you will see
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Yiqing-Gu/Dog-Image-Search.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd Dog-Image-Search
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
 
-```sh
-Server running on http://localhost:3011
-```
+## Usage
 
-in the terminal. At the same time, a web page will appear.
+1. Start the server:
+   ```bash
+   node main.js
+   ```
+2. If the server starts successfully, the terminal will display:
+   ```
+   Server running on http://localhost:3011
+   ```
+3. Open your web browser and navigate to `http://localhost:3011`.
+4. Use the interface to search for a specific dog breed or get a random dog image.
 
-Users can search through a specific dog breed or getting a random image.
+## Testing
 
-## Test
+This project uses [Jest](https://jestjs.io/) and [SuperTest](https://github.com/visionmedia/supertest) for testing.
 
-A middleware called "Jest" is used and needed here. Test file is in dogs-main\__tests__ and called "routes.test.js".
+### Setup Tests
 
-```sh
-npm install -D jest supertest
-```
+1. Install the testing dependencies:
+   ```bash
+   npm install -D jest supertest
+   ```
+2. Ensure your `package.json` includes the following under "scripts":
+   ```json
+   "scripts": {
+     "test": "jest --watchAll"
+   }
+   ```
+3. To run the tests:
+   ```bash
+   npm run test
+   ```
+4. The console will display the test results, including status codes and URLs for random images.
 
-Package.json should have been revised. If not, please revise in the following way.
+## Contributing
 
-//package.json
-"scripts": {
- "test": "jest --watchAll",
-},
+Contributions are welcome! Please fork the repository and submit a pull request for review.
 
-After setting an expecting status code, console will compare real status code and print a url for the random image. 
+## License
 
-Run the following command to start testing.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-```sh
-npm run test
-```
+## Acknowledgements
+
+- [Dog API](https://dog.ceo/dog-api/) for providing the dog images.
+- [Jest](https://jestjs.io/) and [SuperTest](https://github.com/visionmedia/supertest) for testing frameworks.
